@@ -30,12 +30,10 @@ def calculate_tf_idf(ingredients_list):
     tf_idf.fit(ingredients_list)
     tf_idf_matrix = tf_idf.transform(ingredients_list)
     pickle.dump(
-        tf_idf,
-        open("data/tf_idf.pickle", "wb"),
+        tf_idf, open("data/tf_idf.pickle", "wb"),
     )
     pickle.dump(
-        tf_idf_matrix,
-        open("data/tf_idf_matrix.pickle", "wb"),
+        tf_idf_matrix, open("data/tf_idf_matrix.pickle", "wb"),
     )
     return tf_idf_matrix
 

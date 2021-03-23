@@ -49,8 +49,7 @@ def tokenization(recipe_list):
         ingredient_list = list(set(recipe["ingredients"]))
         ingredient_list_tokenized = []
         for ingredient in ingredient_list:
-            ingredient_tokenized = "-".join(
-                tokenizer.tokenize(ingredient.lower()))
+            ingredient_tokenized = "-".join(tokenizer.tokenize(ingredient.lower()))
             ingredient_list_tokenized.append(ingredient_tokenized)
         ingredient_list_tokenized = list(set(ingredient_list_tokenized))
         recipe_tokenized["ingredients"] = ingredient_list_tokenized
