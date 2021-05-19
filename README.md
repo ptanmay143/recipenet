@@ -8,29 +8,22 @@
 
 ### Setup
 
-- Install [Git-SCM](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+- Install [Miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
 
-- Clone this repository and change directory to the cloned folder.
+- Setup the Python environment.
 
   ```shell
-  git clone https://github.com/ptanmay143/recipenet.git
-  cd recipenet/
+  conda create -n recipenet python=3.7
+  conda activate recipenet
+  conda install nltk numpy scikit-learn
   ```
 
 - Install [Node.js](https://nodejs.org/en/download/).
 
-- Install the required dependencies.
+- Setup the Node.js environment.
 
   ```shell
   npm install
-  ```
-
-- Install [Miniconda](https://conda.io/projects/conda/en/latest/user-guide/install/index.html).
-
-- Create a Python environment.
-
-  ```shell
-  conda env create -f environment.yml
   ```
 
 ### Usage
