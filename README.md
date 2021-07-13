@@ -1,7 +1,5 @@
 # RecipeNet
 
-> Recommendation system for recipes based on the available ingredients
-
 ![RecipeNet](/assets/tool.png?raw=true)
 
 ## Instructions
